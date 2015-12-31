@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<div id ="logo">
+
+
+</div>
+
+<head>  </head>
+<div = "header">
+<header>
+		<form id ="form">
+		<input type="Login" value ="Login">
+		<input type="Sign Up" value ="Sign Up">
+		
+		</form>
+</header>
+</div>
+
+<body>
+<div = "Left Arrow">
+	
+</div>
+<div id = "Chat Select">
+
+
+</div>
+
+<div = "Right Arrow">
+	
+</div>
+</body>
+
+
+<footer></footer>
+</html>

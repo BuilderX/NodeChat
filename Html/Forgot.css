@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    border-top: dotted;
+    
+}
+body:hover{
+    background-color: #ff8350;
+
+}
+#idANI:hover{
+
+ animation: cd 2s linear;
+ }
+@keyframes cd {
+        }
+
+
+
+.button {
+    top:200px;
+    left:415px;
+    height: 20px;
+    width:130px;
+    position: absolute;
+    border-top: 1px solid #96d1f8;
+    background: #2b343b;
+    background: -webkit-gradient(linear, left top, left bottom, from(#061621), to(#2b343b));
+    background: -webkit-linear-gradient(top, #061621, #2b343b);
+    background: -moz-linear-gradient(top, #061621, #2b343b);
+    background: -ms-linear-gradient(top, #061621, #2b343b);
+    background: -o-linear-gradient(top, #061621, #2b343b);
+    padding: 5px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #d694d6;
+    font-size: 9px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.button:hover {
+    border-top-color: #576b78;
+    background: #576b78;
+    color: #170317;
+}
+.button:active {
+    border-top-color: #6c8494;
+    background: #6c8494;
+}

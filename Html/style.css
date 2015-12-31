@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html{
+
+    font-weight: 300;
+    -webkit-font-smoothing:antialiased;
+
+}
+html,input{
+
+    font-family: "Helvetica","Arial","Lucida Grande","sans-serif","Helvetica Neue";
+
+
+}
+html,body{
+
+    height:100%;
+    margin:0;
+    padding:0;
+
+}
+ul{
+    list-style: none;
+    word-wrap: break-word;
+
+
+}
+.pages{
+
+        height:100%;
+        position: absolute;
+        width: 100%;
+
+
+}
+.login_page{
+        background-color: #000;
+
+}
+.login_page .form .usernameInout{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #fff;
+    outline:none;
+    padding-bottom:15px ;
+    text-align: center;
+    widows:400px;
+}
+
+.login_page .title{
+    font-size: 200%;
+
+}
+.login_page .usernameInout{
+    font-size: 200%;
+    letter-spacing: 3px;
+}
+.login_page .title .login_page .username{
+    color:#fff;
+    font-weight:100;
+
+}
+
+.chat.page{
+    display:none;
+
+
+}
+
+.messages{
+    font-size: 150%;
+}
+.inputMessage{
+    font-size: 100%;
+}
+
+
+
+

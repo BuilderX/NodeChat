@@ -1,0 +1,670 @@
+body {
+    width: 60px;
+    height: 104px;
+    padding:20px;
+    top:100px;
+
+}
+#nav{
+    color:white;
+    padding: 10px 20px;
+    border-radius: 4px 4px 0 0;
+    position:absolute;
+    left:50%;
+}
+
+#nav ul{
+    float: left;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 7px;
+    text-align: center;
+    background: black }
+
+ul {
+    margin: 20px auto;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+
+}
+
+@-moz-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    90% {transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+@-o-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);
+
+        }
+}
+
+.round {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    padding-top: 50px;
+    text-decoration: none;
+
+    font-size: 25px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+    font-family: "Hammersmith One", sans-serif;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+    border-radius: 1300px;
+    z-index: 1;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.round:hover {
+    width: 120px;
+    height: 70px;
+    letter-spacing: .0065em;
+    top: -15%;
+    display: block;
+    font-size: 2px;
+    padding-top: 38px;
+    z-index: 2;
+    white-space: normal;
+    border-size: 5px;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+#card-container{
+top:130px; position: absolute;
+}
+a.red {
+    background-color: rgba(239,57,50,1);
+    color: rgba(133,32,28,1);
+    border-color: rgba(133,32,28,.2);
+}
+
+a.red:hover {
+    color: rgba(239,57,50,1);
+}
+
+a.green {
+    background-color: rgba(1,151,171,1);
+    color: rgba(0,63,71,1);
+    border-color: rgba(0,63,71,.2);
+}
+
+a.green:hover {
+    color: rgba(1,151,171,1);
+}
+
+a.yellow {
+    background-color: rgba(252,227,1,1);
+    color: rgba(153,38,0,1);
+    border-color: rgba(153,38,0,.2);
+}
+
+a.yellow:hover {
+    color: rgba(252,227,1,1);
+}
+
+.round span.round {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 1px;
+    border: none;
+    padding: 40% 20% 0 20%;
+    color: black
+;
+}
+
+.round span:hover {
+    opacity: .95;
+    font-size: 10px;
+    text-decoration-color: black;
+
+    -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.green span {
+    background: cyan;
+}
+
+.red span {
+    background: red;
+}
+
+.yellow span {
+    background: purple;
+}
+
+
+.flip-container {
+
+
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+    border: 1px solid #ccc;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 200px;
+    height: 200px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    background: url(http://images.freeimages.com/images/previews/12e/history-1314775.jpg) 0 0 no-repeat;
+    z-index: 0;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    background: #f8f8f8;
+}
+
+.front .name {
+    font-size: 2.5em;
+    display: inline-block;
+    background: rgba(33, 33, 133, 10);
+    color: black;
+    font-family: Garamond;
+    padding: 5px 5px;
+    border-radius: 5px;
+    bottom: 70px;
+    left: 55px;
+    position: absolute;
+    text-shadow: 0.1em 0.0em 0.05em #333;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.back-logo {
+    position: absolute;
+    bottom: 101px;
+    left: 70px;
+    width: 100px;
+    height: 100px;
+    background: url(http://images.freeimages.com/images/previews/dbd/globe-1419902.jpg) 0 0 no-repeat;
+}
+
+.back-title {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+}
+
+.back p {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 10px;
+    font-family: arial;
+    line-height: 2em;
+}
+/* Next Card*/
+
+
+
+.flip-container2 {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+    border: 1px solid #ccc;
+}
+
+
+.flip-container2:hover .flipper2,
+.flip-container2.hover .flipper2 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container2, .front2, .back2 {
+    width: 200px;
+    height: 200px;
+}
+
+.flipper2 {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front2, .back2 {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front2 {
+    background: url(http://previews.123rf.com/images/radiantskies/radiantskies1210/radiantskies121000122/15995962-Abstract-word-cloud-for-Lifestyle-with-related-tags-and-terms-Stock-Photo.jpg) 0 0 no-repeat;
+    z-index: 0;
+    background-size:275px 250px;
+}
+
+.back2 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    background: #f8f8f8;
+}
+
+.front2 .name2 {
+    font-size: 2.5em;
+    display: inline-block;
+    background: rgba(33, 33, 133, 10);
+    color: black;
+    font-family: Garamond;
+    padding: 5px 5px;
+    border-radius: 5px;
+    bottom: 70px;
+    left: 55px;
+    position: absolute;
+    text-shadow: 0.1em 0.0em 0.05em #333;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.back-logo2 {
+    position: absolute;
+    bottom: 101px;
+    left: 70px;
+    width: 100px;
+    height: 100px;
+    background: url(http://images.freeimages.com/images/previews/dbd/globe-1419902.jpg) 0 0 no-repeat;
+}
+
+.back-title2 {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+}
+
+.back2 p {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 10px;
+    font-family: arial;
+    line-height: 2em;
+}
+
+
+/* Next Card*/
+
+
+
+.flip-container3 {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+    border: 1px solid #ccc;
+}
+
+
+.flip-container3:hover .flipper3,
+.flip-container3.hover .flipper3 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container3, .front3, .back3 {
+    width: 200px;
+    height: 200px;
+}
+
+.flipper3 {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front3, .back3 {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front3 {
+    background: url(http://bizblogs.fullerton.edu/mba/files/2014/08/Business-Communication-Skills-Teach-Your-Sales-Team-to-Sell-not-to-Offer-Discounts.jpg) 0 0 no-repeat;
+    z-index: 0;
+    background-size: 200px 200px;
+}
+
+.back3 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    background: #f8f8f8;
+}
+
+.front3 .name3 {
+    font-size: 2.5em;
+    display: inline-block;
+    background: rgba(33, 33, 133, 10);
+    color: black;
+    font-family: Garamond;
+    padding: 5px 5px;
+    border-radius: 5px;
+    bottom: 70px;
+    left: 55px;
+    position: absolute;
+    text-shadow: 0.1em 0.0em 0.05em #333;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.back-logo3 {
+    position: absolute;
+    bottom: 90px;
+    left:90px;
+    width: 100px;
+    height: 100px;
+    background: url(http://etc.usf.edu/clipart/5000/5081/h_104_lg.gif) 0 0 no-repeat;
+    background-size:60px 60px;
+
+
+}
+
+.back-title3 {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+}
+
+.back3 p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 10px;
+    font-family: arial;
+    line-height: 2em;
+}
+
+
+/* Next Card*/
+
+
+
+.flip-container4 {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+    border: 1px solid #ccc;
+}
+
+
+.flip-container4:hover .flipper4,
+.flip-container4:hover .flipper4 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container4, .front4, .back4 {
+
+    width: 200px;
+    height: 200px;
+}
+
+.flipper4 {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front4, .back4 {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front4 {
+    background: url(http://ours-mag.com/wp-content/uploads/2015/07/flexible-gender-identity.png) 0 0 no-repeat;
+    z-index: 0;
+    background-size: 200px 200px;
+}
+
+.back4 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    background: #f8f8f8;
+}
+
+.front4 .name4 {
+    font-size: 2.5em;
+    display: inline-block;
+    background: rgba(33, 33, 133, 10);
+    color: black;
+    font-family: Garamond;
+    padding: 5px 5px;
+    border-radius: 5px;
+    bottom: 70px;
+    left: 55px;
+    position: absolute;
+    text-shadow: 0.1em 0.0em 0.05em #333;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.back-logo4 {
+    position: absolute;
+    bottom: 90px;
+    left:90px;
+    width: 100px;
+    height: 100px;
+    background: url(http://etc.usf.edu/clipart/5000/5081/h_104_lg.gif) 0 0 no-repeat;
+    background-size:60px 60px;
+
+
+}
+
+.back-title4 {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+}
+
+.back4 p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 10px;
+    font-family: arial;
+    line-height: 2em;
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<div id ="logo">
+
+
+</div>
+<link href ="MyAccount.css" type="text/css" rel ="stylesheet" src="jquery.js"/>
+
+
+<meta charset=utf-8 />
+<title>JS Bin</title>
+<style>
+  article, aside, figure, footer, header,
+  menu, nav, section { display: block; }
+</style>
+<head>  </head>
+<body>
+
+<div id="nav_container">
+    <nav>
+        <span>Topic</span>
+        <span>Find</span>
+        <span>Friends</span>
+        <span>Random</span>
+        <span>About</span>
+
+    </nav>
+    <div id="selector">
+        <div id="shape"></div>
+        <div id="shape_two"></div>
+    </div>
+</div>
+
+
+
+    <div id="upload Pic" style=" top: 400px;">
+        <input type='file' onchange="readURL(this);" style="position: center"/>
+        <img id="image" src="#" alt="your image" />
+    </div>
+
+<script type="javascript"   >
+	  function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#image')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+
+</script>
+	
+
+
+</body>
+</html>

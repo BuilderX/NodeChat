@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="Login.css" rel="stylesheet" media="all">
+    <title></title>
+</head>
+<body>
+
+<div id="login">
+    <h1>Welcome </h1>
+
+    <form action="/" method="post" style="top:250px; left:350px;position:absolute">
+
+        <div class="field-wrap" style ="color:white; " >
+            <label id="email" >
+                Email Address<span class="req" style=" " ></span>
+            </label>
+            <input type="email"required autocomplete="on" style=""/>
+        </div>
+
+        <div class="field-wrap" style ="color:white">
+            <label>
+                Password<span class="req"></span>
+            </label>
+            <input type="password"required autocomplete="off" style="position: relative; left:17px"/>
+        </div>
+
+        <p class="forgot" style="position: relative;left:50px"><a href="Forgot.html">Forgot Password?</a></p>
+
+        <a href ="MyAccount.html"><ul id="loginbutton"/>Log In</ul>
+</a>
+    </form>
+
+</div>
+
+
+<div class="row">
+    <div class="col left">
+
+        <p><small>
+
+        </small></p>
+    </div>
+    <div class="col-right">
+        <button class="btn facebook" data-provider="facebook"><i></i><span>Facebook</span></button>
+        <button class="btn twitter" data-provider="twitter"><i></i><span>Twitter</span></button>
+        <button class="btn plus" data-provider="google plus"><span class="i"><i></i></span><span>Google Plus</span></button>
+    </div>
+</div>
+
+</body>
+</html>
