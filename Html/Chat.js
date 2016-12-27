@@ -114,7 +114,7 @@ io.on('connection' , function(socket) {
 
         socket.leave(data.oldRoom);
         socket.join(data.oldRoom);
-        io.in(data.oldRoom).emit('use left', data);
+        io.in(data.oldRoom).emit('user left', data);
         io.in(data.newRoom).emit('user joined', data);
 
     });
